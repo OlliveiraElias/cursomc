@@ -48,7 +48,7 @@ public class Produto  implements Serializable {
 		this.nome = nome;
 		this.preco = preco;
 	}
-//não serializar a lista de produtos @jsonignore
+	
 	@JsonIgnore
 	public List<Pedido> getPedidos() {
 		List<Pedido> lista = new ArrayList<>();
